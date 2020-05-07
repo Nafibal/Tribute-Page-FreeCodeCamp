@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Acme';
+}
+
+h2 {
+  font-size: 4rem;
+  margin-bottom: 1em;
+  text-shadow: 0 0 3px red;
+}
+
+p, li {
+  font-family: 'Kotta One';
+  font-size: 2rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+}
+
+.hero {
+  background-image: url(https://images6.alphacoders.com/990/thumb-1920-990124.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  filter: grayscale(.9);
+  position: relative;
+  height: 100vh;
+}
+
+.hero .border {
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(212, 16, 16);
+  padding: 0.3em;
+  box-shadow: 0 0 5px 3px rgba(201, 28, 28, 0.8);
+  border-radius: 20px;
+}
+
+.hero__title {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 6rem;
+  color: rgb(250, 98, 98);
+}
+
+section {
+  padding: 5em 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tribute {
+  border-top: 2rem solid rgb(15, 3, 3);
+  text-align: center;
+}
+
+.tribute p {
+  margin-bottom: 1em;
+}
+
+.club h2 {
+  text-align: center;
+}
+
+.club__logo a {
+  font-weight: bold;
+  transition: .3s;
+}
+
+.club__logo a:hover {
+  font-size: 1.2em;
+  color: rgb(83, 6, 6);
+}
+
+.image img {
+  max-width: 100%;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.836);
+}
+
+.image__caption {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.link {
+  background-color: rgb(24, 7, 7);
+  color: rgb(228, 224, 224);
+  text-shadow: 0 0 1px red;
+
+  text-align: center;
+  margin: 1em;
+}
+
+.link a {
+  color: rgb(228, 224, 224);
+  text-shadow: 0 0 3px red;
+  transition: .3s;
+}
+
+.link a:hover {
+  color: red;
+  font-size: 1.2em;
+}
+
+
+
